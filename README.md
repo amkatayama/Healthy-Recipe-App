@@ -17,10 +17,10 @@ My clients are my mother and my grandmother, and they are currently facing a pro
 
 ### Proposed Solution
 
-The solution for this is to create a software that provides a way for my clients to look for a variety of menus, along with the ingredients, recipe and nutrition data. This should be done in two
+The solution for this is to create an iOS app that provides a way for my clients to look for a variety of menus, along with the ingredients, recipe and nutrition data. My clients both use iPhone, and they can use basic functions such as texting or searching on internet, This should be done in two
 in two simple steps: 
 
-The proposed solution to this problem is to create a software that provides an easy way for my clients to search for variety of menus, along with the ingredients, recipe and nutrition data. Now, this should be achievable in two simple steps 
+The proposed solution to this problem is to create a software that provides an easy way for my clients to search for variety of menus, along with the ingredients, recipe and nutrition data. Now, this should be achievable in two simple steps:  
 
 1.	type in a keyword (eg. chicken, tomato)
 2.	look for and tap on the desired recipe to see details 
