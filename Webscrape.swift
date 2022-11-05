@@ -11,18 +11,19 @@ import SwiftSoup
 
 struct WebscrapeView: View {
     
-    // creating necessary variables
+    // creating global variables for necessary html tags
     @State var basehtml = ""
     @State var subhtml = ""
     
-    @State var recipeLinks: [String] = []
+    @State var recipeLinks: [String] = [] 
     
     @State var recipeNames: [String] = []
     @State var recipeImageLinks: [String] = []
-    @State var recipeDescs: [String] = []
-    @State var recipeNutDict: [String: [String]] = [:]
-    @State var recipeIngredDict: [String: [String]] = [:]
+    @State var recipeDescs: [String] = []  // description info 
+    @State var recipeNutDict: [String: [String]] = [:]  // nutrition info 
+    @State var recipeIngredDict: [String: [String]] = [:]  // ingred info 
 
+    // linking to Firebase
     func addToFirestore() {
         
         accessSubURL()
@@ -42,14 +43,13 @@ struct WebscrapeView: View {
     func extractLink() {
         
         // looping through many pages
-        for n in 0...41{
+        for n in 0...100{
             
             // receive the base url
             let baseurl = "https://www.allrecipes.com/recipes/1947/everyday-cooking/quick-and-easy/?page=\(n)"
             
             guard let myURL = URL(string: baseurl) else {
-                // if url is invalid
-                print("Error: \(baseurl) doesn't seem to be a valid URL")
+                print("Error: \(baseurl) doesn't seem to be a valid URL")  // if url is invalid (message only for developer)
                 return
             }
             
@@ -77,19 +77,21 @@ struct WebscrapeView: View {
                         }
                     }
                     
-                // when error is caught
+                // error handling 
                 } catch Exception.Error(type: let type, Message: let message) {
                     print(type)
                     print(message)
                 } catch {
                     print("")
                 }
-            // when error is caught
+            // error handling 
             } catch let error {
                 print(error)
             }
         }
     }
+    
+    // FROM HERE!!!
     
     // retrieving subhtml for suburl
     func accessSubURL() {
