@@ -30,12 +30,36 @@ Another function this application should have is a system which notifies the use
 
 ### Test Plan
 
-| Action Tested | Procedure | Expected Outcome | Outcome |
-|:-- |:-- |:-- |:-- |
-| User can create their own account| Typing valid information (matching passwords, secure password, and no empty text fields) in the required text fields and checking the Cloud Firestore to see if it has created a new use|||
+| Action Tested | Procedure | Expected Outcome |
+|:-- |:-- |:-- |
+| User can create their own account| Typing valid information (matching passwords, secure password, and no empty text fields) in the required text fields and checking and confirm a created user account in Cloud Firestore | If all the information entered in the text field is valid, a new document containing user information will be created in the Cloud Firestore |
+|User can login & logout from their own account| Type in a registered email and password then tap the login button to see if it navigates to the main page | Once the login button is tapped if email and password are entered correctly, it will move to the main user page | 
+| Disables the navigation button and various error message is shown whenever registration or login failed | Type in invalid information (non- matching password, insecure password, empty text fields, incorrect login information) to check if it shows error-specific messages, and disables the navigation button | It will show different error messages for each error, and disables the navigation button |
+|Search results are shown after keywords are entered| Check by typing in keywords (ex. “tomato”, “chicken”) to see if the results show the corresponding recipes | It will show the corresponding search results (e.g. if chicken was entered, results should show “Chicken wing”, “Garlic Fried Chicken”, etc.) |
+|Displays details of recipe when selected| Tap a random recipe from the search result to check the functionality of the navigation link, as well as the contents on the details view| When a recipe is selected, it will take the user to details view, and present information about ingredients, recipe, and nutrition facts | 
+| Appearance of popup message to remind the user that the recipe has been made recently | For the sake of simplicity, tap on a same recipe from the previous test after a minute or two to check if a reminder would pop up | When the same recipe is tapped more than once within the given time (timer triggered by the first tapped), it will show a message reminding the user | 
 
  
 ## Development 
+
+> ### Used Techniques
+> 1. [Conditional Statements for showing different error messages](#conditional-statements-for-showing-different-error-messages)
+> 2. [Firbase Authentication to store user information](#firbase-authentication-to-store-user-information)
+> 3. [Webscraping and Error Handling for creating recipes database](#webscraping-and-error-handling-for-creating-recipes-database)
+> 4. [Object Oriented Programming for displaying recipes](#object-oriented-programming-for-displaying-recipes)
+
+### Conditional Statements for showing different error messages
+
+### Firbase Authentication to store user information
+
+### Webscraping and Error Handling for creating recipes' database
+
+### Object Oriented Programming for displaying recipes
+
+
+
+
+
 
 ## Functionality 
 
