@@ -28,12 +28,11 @@ Another function this application should have is a system which notifies the use
 
 ## Design
 
-### Sketch of the Application
-<img width="442" alt="AppSketch" src="https://user-images.githubusercontent.com/113309314/201242902-5c1b5f4d-3221-415b-ab8c-703260099f6e.png">
+### Test Plan
 
-Here is the first skecth of the user interface of my iOS applicatoin. There are four different pages, with navigation arrows in between. After showing this to my clients, I received several feedbacks from them. The second sketch of the app shown below incorporates those feedbacks: 
-
-<img width="543" alt="Screen Shot 2022-11-10 at 20 41 32" src="https://user-images.githubusercontent.com/113309314/201243675-bbf18a0a-e1a7-4e42-86ed-624f8fd84ead.png">
+| Action Tested | Procedure | Expected Outcome | Outcome |
+|:-- |:-- |:-- |:-- |
+| User can create their own account| Typing valid information (matching passwords, secure password, and no empty text fields) in the required text fields and checking the Cloud Firestore to see if it has created a new use|||
 
  
 ## Development 
