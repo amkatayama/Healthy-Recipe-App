@@ -17,20 +17,25 @@ My clients are my mother and my grandmother, and they are currently facing a pro
 
 ### Proposed Solution
 
-The solution for this is to create an iOS app that provides a way for my clients to look for a variety of menus, along with the ingredients, recipe and nutrition data. My clients both use iPhone, and they can use basic functions such as texting or searching on internet, This should be done in two
-in two simple steps: 
+The proposed solution to this problem is to create a software that provides an easy way for my clients to search for variety of menus, along with the ingredients, recipe and nutrition data. Both of my clients use an iPhone, however they can only  perform basic operations such as texting and seraching on the internet. Hence, the applicatoin should be designed in way that it can be used in these two simple steps:  
 
-The proposed solution to this problem is to create a software that provides an easy way for my clients to search for variety of menus, along with the ingredients, recipe and nutrition data. Now, this should be achievable in two simple steps:  
+> 1.	Type in a keyword (eg. chicken, tomato)
+> 2.	Scroll through and tap on the desired recipe to see details 
 
-1.	type in a keyword (eg. chicken, tomato)
-2.	look for and tap on the desired recipe to see details 
+These are the only steps that are required by the users. As for the application, it will have a search bar for users to type in a keyword and the results page users can scroll down to see the search result. After the user has tapped on a specific recipe, it will present the ingredients, recipe, and nutrition data in one glance.
 
-These are the only steps the users need to follow. As for application, what it should do after a keyword has been typed in is shown a search page with the search results of multiple possible recipes, corresponding to the keyword. After the users have tapped on the menu they want, it should present the ingredients, recipe and nutrition data in one glance. 
-
-Another function this application should have is a system which notifies the users that the menu has been used recently, to prevent them from making a repetitive recipe unconsciously. This means the system should remember what the users searched previously. This varies with different users, thus a secure login system would also need to be embedded, so that each user has their own dedicated page.
+Another function this application should have is a system which notifies the users that the menu has been used recently, to prevent them from making a repetitive recipe unconsciously. This means the system should remember the most recent search history. The search histories will vary with different users, and to this issue, I decided to ceate a login system for each user so that the search history stays within their user page. 
 
 ## Design
 
+### Sketch of the Application
+<img width="442" alt="AppSketch" src="https://user-images.githubusercontent.com/113309314/201242902-5c1b5f4d-3221-415b-ab8c-703260099f6e.png">
+
+Here is the first skecth of the user interface of my iOS applicatoin. There are four different pages, with navigation arrows in between. After showing this to my clients, I received several feedbacks from them. The second sketch of the app shown below incorporates those feedbacks: 
+
+<img width="543" alt="Screen Shot 2022-11-10 at 20 41 32" src="https://user-images.githubusercontent.com/113309314/201243675-bbf18a0a-e1a7-4e42-86ed-624f8fd84ead.png">
+
+ 
 ## Development 
 
 ## Functionality 
