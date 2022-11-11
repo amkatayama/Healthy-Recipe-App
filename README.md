@@ -50,9 +50,83 @@ Another function this application should have is a system which notifies the use
 
 ### Conditional Statements for showing different error messages
 
+When the users are registering for the first time, they will be required three personal information: username, email address, and password. In this particlar application the users are required to type in the same password for confirmation. These information must have certain credentials to ensure the correctness and security of user information. Whenever there are any insufficiency or invalid information, the program should return an error message specific to the user's error. The following is a code snippet from the function which is dedicated to this: 
+```swift 
+func validateFields() -> String? {
+        
+        // check if all the fields are filled
+        if self.username_su.count == 0 || self.email_su.count == 0 || self.password_su.count == 0 || self.confirmPassword.count == 0 {
+            
+            errorMessage = "Please fill in all fields"
+            return "error"
+
+        }
+        // check if the password is secure
+        if isPasswordSecure(password_su) == false {
+            
+            // show error message
+            errorMessage = "Please make sure you password includes at least one uppercase, one lowercase, one numeric digit and is more than 8 characters."
+            return "error"
+        }
+        
+        // check if the password and confirmed password match
+        if self.confirmPassword != self.password_su {
+            
+            errorMessage = "Please make sure that your passwords match."
+            return "error"
+            
+        }
+        
+        // if no error is detected return nil (default setting of return value)
+        return nil
+        
+    }
+```
+
 ### Firbase Authentication to store user information
 
-### Webscraping and Error Handling for creating recipes' database
+Firebase is a development platform for mobile applications, such as iOS and Androids. While there are many features in Firebase, I specifically used Cloud Firestore. This is a real-time database that Google provides us for free. I used this for storing user information as well as the web scraped data.
+
+<img width="809" alt="Screen Shot 2022-11-10 at 22 09 21" src="https://user-images.githubusercontent.com/113309314/201254548-e7524aa6-a770-4cd0-b0fb-cf0ff7a36cc3.png">
+
+The following code snippet adds the webscraped recipe details into the Firebase Realtime Database, to manage and store the retrieved information.
+
+```swift 
+func addToFirestore() {
+        
+        accessSubURL()
+        
+        // creating a constant for the database
+        let db = Firestore.firestore()
+        
+        // loop through the number of links retrieved to create the correct number of documents
+        // add all information to firestore
+        for i in 0..<recipeLinks.count {
+            db.collection("recipeData").addDocument(data: ["name": recipeNames[i], "info": recipeDescs[i], "image": recipeImageLinks[i], "ingred": recipeIngredDict[recipeNames[i]], "nutrit": recipeNutDict[recipeNames[i]]])
+        }
+    
+    }
+```
+
+### Webscraping and Error Handling for creating recipes database
+
+Webscraping entails "scraping" through the webpages, and only capturing the necessary information. The webpage I used had a main page, and a sub-page for each recipe, and in the following code snippet it scrapes for the subpage link by looking through all of the <a> tags that can be found on the current page:
+
+```swift 
+// for each "a" check the classname
+for i in 0..<a.count {
+    // get classname
+    let className: String = try a[i].className()
+    // <a> with classname of the below containes recipe links
+    // append the links contained in a into the recipeLinks
+    if className == "tout__titleLink" {
+        // add to recipeLinks
+        recipeLinks.append(try "https://www.allrecipes.com/\(a[i].attr("href"))")
+    }
+}                   
+                        
+```
+This is a very small portion of my webscraping code intended only for simple demonstration of how I implemented it. The full code can be seen in [webscrape.swift]().
 
 ### Object Oriented Programming for displaying recipes
 
