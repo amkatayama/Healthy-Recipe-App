@@ -8,6 +8,7 @@ Development process of my first iOS application
 3. [Development](#development)
 4. [Funcitonality](#functionality)
 5. [Evaluation](#evaluation)
+6. [Resources](#resources)
 
 ## Planning
 
@@ -126,15 +127,23 @@ for i in 0..<a.count {
 }                   
                         
 ```
-This is a very small portion of my webscraping code intended only for simple demonstration of how I implemented it. The full code can be seen in [webscrape.swift]().
+I got the class name "tout__titleLink" by right clicking on the webpage and selecting "Inspect". This shows the HTML of the webpage, and by looking through this I was able to differentiate what information I want to scrape, and what to discard. This is a very small portion of my webscraping code intended only for simple demonstration of how I implemented it. The full code can be seen in [Webscrape.swift](https://github.com/amkatayama/Healthy-Recipe-App/main/Webscrape.swift).
+
 
 ### Object Oriented Programming for displaying recipes
 
 
 
-
-
-
 ## Functionality 
 
+I tested the functionality of my application using the test plan that was shown in the [Test Plan](#test-plan) section. This was strictly reviewed with the clients to maximize its usability. Here is the [link](https://vimeo.com/user188693914) to the video which demonstrates the usage of the application by executing through each test plan. 
+
 ## Evaluation 
+Future Recommendations / Improvements:
+
+
+## Resources 
+[1] Firebase Authentication Tutorial 2020 - Custom IOS Login Page (Swift), CodeWithChris, 25 July 2019, www.youtube.com/watch?v=1HN7usMROt8&t=3221s. </br>
+[2] Web Scraping in Swift 4 Using SwiftSoup, AG Tutorials, 22 Oct. 2018, www.youtube.com/watch?v=z2Z90aJUXhg&t=1224s. </br>
+[3] Custom Search Bar Using Firebase In SwiftUI - Integrating SearchBar With Firebase Using SwiftUI, Kavsoft, 31 Jan. 2020, www.youtube.com/watch?v=wnsSYeJtmYw&t=366s. </br>
+[4] Hudson, Paul. “The Ultimate Guide to Timer.” Hacking with Swift, Hacking with Swift, 3 Jan. 2021, www.hackingwithswift.com/articles/117/the-ultimate-guide-to-timer.
