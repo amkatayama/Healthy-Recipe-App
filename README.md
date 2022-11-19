@@ -47,7 +47,6 @@ Another function this application should have is a system which notifies the use
 > 1. [Conditional Statements for showing different error messages](#conditional-statements-for-showing-different-error-messages)
 > 2. [Firbase Authentication to store user information](#firbase-authentication-to-store-user-information)
 > 3. [Webscraping and Error Handling for creating recipes database](#webscraping-and-error-handling-for-creating-recipes-database)
-> 4. [Object Oriented Programming for displaying recipes](#object-oriented-programming-for-displaying-recipes)
 
 ### Conditional Statements for showing different error messages
 
@@ -130,16 +129,14 @@ for i in 0..<a.count {
 I got the class name "tout__titleLink" by right clicking on the webpage and selecting "Inspect". This shows the HTML of the webpage, and by looking through this I was able to differentiate what information I want to scrape, and what to discard. This is a very small portion of my webscraping code intended only for simple demonstration of how I implemented it. The full code can be seen in [Webscrape.swift](https://github.com/amkatayama/Healthy-Recipe-App/main/Webscrape.swift).
 
 
-### Object Oriented Programming for displaying recipes
-
-
-
 ## Functionality 
 
 I tested the functionality of my application using the test plan that was shown in the [Test Plan](#test-plan) section. This was strictly reviewed with the clients to maximize its usability. Here is the [link](https://vimeo.com/user188693914) to the video which demonstrates the usage of the application by executing through each test plan. 
 
 ## Evaluation 
 Future Recommendations / Improvements:
+- User interface of the details view 
+> 1. Make the ingredients more big and visible especially considering my grandmother whose eye sight may not be as good as others 
 
 
 ## Resources 
