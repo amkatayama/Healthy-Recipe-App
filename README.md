@@ -137,6 +137,7 @@ I tested the functionality of my application using the test plan that was shown 
 Future Recommendations / Improvements:
 - User interface of the details view 
 > 1. Make the ingredients more big and visible especially considering my grandmother whose eye sight may not be as good as others 
+>> - iPhones already have 
 
 
 ## Resources 
