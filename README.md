@@ -134,10 +134,20 @@ I got the class name "tout__titleLink" by right clicking on the webpage and sele
 I tested the functionality of my application using the test plan that was shown in the [Test Plan](#test-plan) section. This was strictly reviewed with the clients to maximize its usability. Here is the [link](https://vimeo.com/user188693914) to the video which demonstrates the usage of the application by executing through each test plan. 
 
 ## Evaluation 
-Future Recommendations / Improvements:
-- User interface of the details view 
-> 1. Make the ingredients more big and visible especially considering my grandmother whose eye sight may not be as good as others 
->> - iPhones already have 
+#### Future Recommendations / Improvements:
+- **User interface of the details view** 
+1. Make the ingredients more big and visible especially considering my grandmother whose eye sight may not be as good as others 
+2. Making the entire page scrollable
+ 
+> The size of the texts, and margin of the details section may have caused inconveniences to clients with bad eye-sight. The text sizes can be changed in the "Settings" app in iPhone, however, considering that my target audience only know basic functions, it is best to not assume that they know how to do this. Hence, it is important that we incorporate the ability of changing text sizes and section sizes within the application. 
+ 
+ - **Result page organization**
+ 1. Recipes could've been organized in alphabetical order, grouped within the same genre (Italian, Japanese, etc.)
+ 
+ > For more clarity and easy access to desired information, in the future, we can implement a new way of organizing the search results. For example, in the current version, the result page displays the results in the webscraped order. However, we could write a short code that alphabetically sorts the webscraped data and then display them. Important thing to note here is that since the amount of data is quite big, the sorting algorithm must be O(nlogn) to provide our clients with smooth usage of the application. Moreover, in the search page, we can add new buttons labeled "Japanese", "Italian", etc. so that if the clients have no idea of what to type in the search box, they still have something to look for.
+ 
+ 
+ 
 
 
 ## Resources 
