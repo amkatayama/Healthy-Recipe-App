@@ -146,7 +146,11 @@ I tested the functionality of my application using the test plan that was shown 
  
  > For more clarity and easy access to desired information, in the future, we can implement a new way of organizing the search results. For example, in the current version, the result page displays the results in the webscraped order. However, we could write a short code that alphabetically sorts the webscraped data and then display them. Important thing to note here is that since the amount of data is quite big, the sorting algorithm must be O(nlogn) to provide our clients with smooth usage of the application. Moreover, in the search page, we can add new buttons labeled "Japanese", "Italian", etc. so that if the clients have no idea of what to type in the search box, they still have something to look for.
  
+ - **More variance in data**
+1. Using more resources to webscrape 
+2. Regulating some menus to appear on the search result if nutrition data appears to be unhealthy
  
+ > Currently, only one resource is webscraped. In this version of implementation, the application, before starting webscrapes the data on the webpages and stores it in firebase. However, if this resource has issues on its server side, we will also have problems, if we still haven't used that application yet. One way of fixing this issue, is to have more than one resource to rely on. This way even if one resource goes down, there are still other back up resources we can webscrape from. Another good feature to implement maybe to limit the menus the application would display, based on its nutrition data. As of now, it spits out exactly as it webscraped, however with the new feature, it filters the webscraped data based on nutrition information (e.g., calories), so that it only shows "healthy" recipes in the search result.
  
 
 
