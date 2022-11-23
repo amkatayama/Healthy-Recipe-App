@@ -107,7 +107,7 @@ struct LoginView: View {
                 .background(Color.blue.opacity(0.8))
                 .cornerRadius(8)
                 .padding(.horizontal, 20)
-                // perform actrion when navigation link is tapped
+                // perform action when navigation link is tapped
                 .simultaneousGesture(TapGesture().onEnded{
                     if verifyLogin(email: email_li, password: password_li) == true {
                         // if the login information is valid show the success message
