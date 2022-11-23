@@ -91,8 +91,6 @@ struct WebscrapeView: View {
         }
     }
     
-    // FROM HERE!!!
-    
     // retrieving subhtml for suburl
     func accessSubURL() {
         
@@ -284,14 +282,13 @@ struct WebscrapeView: View {
 
     // not part of the application view (only for the creator)
     var body: some View {
-        Text("Hello, World!")
-        
         VStack {
             HStack{
                 Button(action: {
                     // call function to retrieve all desired data and add to firebase
                     addToFirestore()
                 }) {
+                    // confirm with the developer side that the data has been added to Cloud Firestore successfully
                     Text("add data!")
                 }
             }
