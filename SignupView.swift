@@ -105,7 +105,7 @@ struct SignupView: View {
                 .cornerRadius(8)
                 .padding(.horizontal, 20)
                 
-                // Text field for password
+                // Text field for the password
                 HStack {
                     Image(systemName: "lock")
                         .foregroundColor(.gray)
