@@ -280,7 +280,7 @@ struct WebscrapeView: View {
 
     }
 
-    // not part of the application view (only for the creator)
+    // not part of the application view (only for the developer)
     var body: some View {
         VStack {
             HStack{
